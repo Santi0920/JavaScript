@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DESAFIOS JAVASCRIPT</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    
+</head>
+
+
+
+
+<body>
+    <div class="bg-info text-center py-2 text-dark">
+        <h3>DESAFIOS JAVASCRIPT</h3>
+    </div>
+    <div class="bg-warning text-center ">
+        <div class="w-100 d-flex justify-content-center">
+            <div class="w-50 my-4">
+              
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #1
+                    </h2>
+
+                    <span class="text-center text-dark">
+                        Calcular Salario:
+                    </span>
+
+                    <br>
+
+                    <label>
+                        Horas trabajadas:
+                    </label>
+
+                    <input type="text" name="horasTrabajadas" id="horasTrabajadas" placeholder="3">
+                    <br>
+                    <br>
+                    <label> 
+                        Costo por hora trabajada:
+                    </label>
+
+                    <input type="text" name="costoporhora" id="costoporhora" placeholder="40000">
+            
+                    <input type="button" value="Calcular" onclick="calcularsalario()">
+
+                    <p id="salida1"></p>
+                    
+                </div>
+                <br>
+
+                <br>
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #2
+                    </h2>
+
+                    <span class="text-center text-dark">
+                        Calcular Indice Masa Corporal:
+                    </span>
+
+                    <br>
+
+                    <label>
+                        Peso:
+                    </label>
+
+                    <input type="text" name="Peso" id="Peso" placeholder="en Kilogramos">
+                    <br>
+                    <br>
+                    <label>
+                         Altura (en m):
+                    </label>
+
+                    <input type="text" name="Altura" id="Altura" placeholder="en Metros">
+               
+                    <input type="button" value="Calcular" onclick="calcularindicemasamuscular()">
+               
+                    <p id="salida2">
+               
+                    </p>
+                </div>
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #3
+                    </h2>
+
+                    <span class="text-center text-dark">
+                        Ventas de dulces:
+                    </span>
+
+                    <br>
+
+                    <label>
+                        Digite el número de barras que vendidas que 
+                            <span class="text-danger">
+                                NO SON
+                            </span> 
+                        vendidas del día:
+                    </label>
+
+                    <br>
+                    <input type="text" name="cantbarranoaldia" id="cantbarranoaldia" placeholder="Precio"><br><br>
+
+                   
+                    <label>
+                        Digite el número de barras que vendidas que
+                        <span class="text-danger">
+                            SON
+                        </span> 
+                        vendidas del día:
+                    </label>
+                    
+                    <br>
+
+
+                    <input type="text" name="cantbarradeldia" id="cantbarradeldia" placeholder="Precio">
+               
+                    <input type="button" value="Calcular" onclick="calcularprecio()">
+               
+                    <p id="salida3">
+               
+                    </p>
+            
+                    <p id="salida3a">
+               
+                    </p>
+                </div>
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #4
+                    </h2>
+
+                    <label>LISTA GENERADA: </label>
+                    <p id="salida4">
+                    </p>
+                    <p id="salida4a">
+                    </p>
+                    <input type="button" value="Añadir" onclick="añadir()">  
+                    <br>    
+                    <br> 
+            
+                </div>
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #5
+                    </h2>
+                    <h6 class="text-center">Aplicativo para determinar palíndromo:</h6>
+                    
+                    <br>
+
+                    <label>
+                        Inserte su palíndromo:
+                    </label>
+
+                    <input type="text" name="palindromo" id="palindromo" placeholder="Reconocer"></input>
+
+                    <input type="button" value="Aceptar" onclick="palabraespalindromo()">
+                    <br>
+
+                    <p id="salida5"></p>
+                    
+                </div>
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #6
+                    </h2>
+
+
+                    <label>
+                        Digite la muestra de numeros separados por comas:
+                    </label>
+                    
+                    <br>    
+                    
+                    <input type="text" name="muestra-no" id="muestra-no" placeholder="Ej: 1,2,3,4,5,6,7..."></input>
+                    
+                    <input type="button" value="Enviar muestra" onclick="calcularmedia()">
+                    
+                    <p id="salida6"></p>
+               
+               
+                </div>
+            
+                <div>
+                    <h2 class="text-danger">
+                        Desafio #7
+                    </h2>
+
+                    <label>
+                        Ingrese el nombre de la fruta y vegetales, luego la cantidad en kg:
+                    </label>
+                    
+                    <br> 
+
+                    <input type="text" name="fruta" id="fruta" placeholder="Nombre de la fruta">
+
+                    <input type="text" name="kilos" id="kilos" placeholder="Kilogramos">
+
+                    <input type="button" value="Consultar precio" onclick="calcularfrutasprecio()">
+
+                    <p id="salida7"></p>
+    
+                </div>
+                   
+            
+                <script type="text/javascript" src="js/1.js"></script>
+                <script type="text/javascript" src="js/2.js"></script>
+                <script type="text/javascript" src="js/3.js"></script>
+                <script type="text/javascript" src="js/4.js"></script>
+                <script type="text/javascript" src="js/5.js"></script>
+                <script type="text/javascript" src="js/6.js"></script>
+                <script type="text/javascript" src="js/7.js"></script>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
+            </body>
+            </html>
